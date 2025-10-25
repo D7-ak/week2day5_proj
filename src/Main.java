@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         ArrayList<ArrayList<String>> xoarr = new ArrayList<>();
         xoarr.add(new ArrayList<String>());
@@ -46,7 +47,7 @@ public class Main {
                     for(int i = 0;i<3;i++) {
                         for (int j = 0; j < 3; j++) {
                             if(xoarr.get(i).get(j).matches(pcRand_TOstring)){
-                                System.out.println("pc generated :"+pcRand_TOstring);
+                                System.out.println("cpu generated :"+pcRand_TOstring);
                                 xoarr.get(i).set(j, "o");
                                 pclegal =true;
                                 break;
@@ -59,7 +60,7 @@ public class Main {
                     break;
                 }
 
-                System.out.println("legal");
+
             }
 
         }
